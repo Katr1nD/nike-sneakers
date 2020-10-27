@@ -10,39 +10,51 @@
 </head>
 
 <body>
+    <div class="wrapper">
 
-    <div class="product">
-        <div class="product__image">
+        <div class="product">
             <img class="product__image_logo_nike" src="./img/logo.png" alt="logo">
-            <ul class="product__slider">
-                <li class="product__slide">
-                    <img class="product__slide_image" src="./img/Nike-SB-Stefan-Janoski-Max.png" alt="nike-sneakers" />
-                </li>
-                <li class="product__slide">
-                    <img class="product__slide_image" src="./img/Nike-SB-Stefan-Janoski-Max.png" alt="nike-sneakers" />
-                </li>
-                <li class="product__slide">
-                    <img class="product__slide_image" src="./img/Nike-SB-Stefan-Janoski-Max.png" alt="nike-sneakers" />
-                </li>
-                <li class="product__slide">
-                    <img class="product__slide_image" src="./img/Nike-SB-Stefan-Janoski-Max.png" alt="nike-sneakers" />
-                </li>
-            </ul>
-        </div>
 
-        <div class="additional-info">
-            <p class="additional-info__title">Nike SB Stefan Janoski Max</p>
-            <p class="additional-info__description">Unisex Skateboarding Shoe</p>
-            <div class="additional-info__evaluation"></div>
-            <div>
-                <div class="size"></div>
-                <div class="qty"></div>
+            <div class="product__imag">
+
+                <div class="product__image product__image_middle">
+                    <div class="product__slider">
+                        <input type="radio" name="radio" id="radio1" class="radio1" checked />
+                        <input type="radio" name="radio" id="radio2" class="radio2" />
+                        <input type="radio" name="radio" id="radio3" class="radio3" />
+                        <input type="radio" name="radio" id="radio4" class="radio4" />
+
+                        <div class="product__slide s1 product__slide_image1"></div>
+                        <div class="product__slide product__slide_image2"></div>
+                        <div class="product__slide product__slide_image3"></div>
+                        <div class="product__slide product__slide_image4"></div>
+                    </div>
+
+                    <div class="product__slider_navigation">
+                        <label for="radio1" class="product__slide_color product__slide_color_1"></label>
+                        <label for="radio2" class="product__slide_color product__slide_color_2"></label>
+                        <label for="radio3" class="product__slide_color product__slide_color_3"></label>
+                        <label for="radio4" class="product__slide_color product__slide_color_4"></label>
+                    </div>
+
+                </div>
+
             </div>
-            <button>Add to cart</button>
+
+            <div class="additional-info">
+                <p class="additional-info__title">Nike SB Stefan Janoski Max</p>
+                <p class="additional-info__description">Unisex Skateboarding Shoe</p>
+                <div class="additional-info__evaluation"></div>
+                <div>
+                    <div class="size"></div>
+                    <div class="qty"></div>
+                </div>
+                <button>Add to cart</button>
+            </div>
+
         </div>
 
     </div>
-
 </body>
 
 </html>

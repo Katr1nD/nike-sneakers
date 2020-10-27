@@ -1,0 +1,133 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product {
+    position: relative;
+    background-color: #111a28;
+    width: 686px;
+    height: 391px;
+    border-radius: 10px;
+    display: flex;
+    align-items: stretch;
+    align-content: space-around;
+}
+
+img {
+    position: absolute;
+    top: 24px;
+    left: 21px;
+}
+
+.product__imag {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+.product__slide_image1 {
+    background-image: url('../img/Nike-SB-Stefan-Janoski-Max.png');
+}
+
+.product__slide_image2 {
+    background-image: url('../img/IMG_8156.JPG');
+}
+
+.product__slide_image3 {
+    background-image: url('../img/Nike-SB-Stefan-Janoski-Max.png');
+}
+
+.product__slide_image4 {
+    background-image: url('../img/IMG_8669.JPG');
+}
+
+.product__slide {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* slider */
+
+.product__image {
+    width: 329px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.product__image_middle {
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+
+.product__slider_navigation {
+    position: absolute;
+    bottom: 23px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.product__slide_color {
+    height: 12px;
+    width: 12px;
+    margin: 6px;
+    background-color: #dddddd;
+    opacity: .7;
+    border-radius: 10px;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.product__slide_color:hover {
+    /* width: 12px;
+    height: 12px; */
+    /* border: 2px solid rgba(255, 255, 255, 0.46); */
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+input[name="radio"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.product__slider {
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+
+.product__slide {
+    width: 25%;
+    transition: all .6s ease;
+}
+
+.product__slide_image {
+    width: 100%;
+    height: 100%;
+}
+
+.radio1:checked~.s1 {
+    margin-left: 0;
+}
+
+.radio2:checked~.s1 {
+    margin-left: -25%;
+}
+
+.radio3:checked~.s1 {
+    margin-left: -50%;
+}
+
+.radio4:checked~.s1 {
+    margin-left: -75%;
+}
+
+
+.additional-info {
+    flex-grow: 1;
+}
