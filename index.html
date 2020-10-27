@@ -46,14 +46,28 @@
                 <p class="additional-info__title">Nike SB Stefan Janoski Max</p>
                 <p class="additional-info__description">Unisex Skateboarding Shoe</p>
                 <div class="additional-info__evaluation"></div>
-                <div>
-                    <div class="size"></div>
-                    <div class="qty"></div>
-                </div>
-                <button>Add to cart</button>
-            </div>
+                <select name="size" id="size" class="additional-info__size">
+                    <option hidden disabled selected value="size">Size</option>
+                    <option value="UK-7">UK 7 EU 41</option>
+                    <option value="UK-8">UK 8 EU 42</option>
+                    <option value="UK-8.5">UK 8,5 EU 43</option>
+                    <option value="UK-9">UK 9 EU 44</option>
+                    <option value="UK-9,5">UK 9 EU 44,5</option>
+                    <option value="UK-10">UK 10 EU 45</option>
+                </select>
 
+                <select name="qty" id="qty" class="additional-info__qty">
+                    <option hidden disabled selected value="qty">Qty</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+
+                <button class="additional-info__button">Add to cart</button>
+            </div>
         </div>
+
+    </div>
 
     </div>
 </body>
