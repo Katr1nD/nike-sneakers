@@ -6,7 +6,6 @@ body {
 
 .wrapper {
     height: 100%;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,8 +18,8 @@ body {
     font-family: "Montserrat";
     background-color: #111a28;
     color: #e1e1e1;
-    width: 686px;
-    height: 391px;
+    width: 42rem;
+    height: 24rem;
     border-radius: 10px;
     display: flex;
 }
@@ -60,7 +59,7 @@ body {
 
 /* slider */
 .product__image {
-    width: 329px;
+    width: 21rem;
     height: 100%;
     overflow: hidden;
     position: absolute;
@@ -162,7 +161,7 @@ body {
 .additional-info__description {
     margin: 0;
     font-size: 14px;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 .additional-info__size,
