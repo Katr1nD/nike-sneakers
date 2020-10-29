@@ -8,6 +8,7 @@
     <title>Nike</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 </head>
 
 <body>
@@ -20,10 +21,10 @@
 
                 <div class="product__image product__image_middle">
                     <div class="product__slider">
-                        <input type="radio" name="radio" id="radio1" class="radio1" checked />
-                        <input type="radio" name="radio" id="radio2" class="radio2" />
-                        <input type="radio" name="radio" id="radio3" class="radio3" />
-                        <input type="radio" name="radio" id="radio4" class="radio4" />
+                        <input class="product__slide_input radio1" id="radio1" type="radio" name="radio" checked />
+                        <input class="product__slide_input radio2" id="radio2" type="radio" name="radio" />
+                        <input class="product__slide_input radio3" id="radio3" type="radio" name="radio" />
+                        <input class="product__slide_input radio4" id="radio4" type="radio" name="radio" />
 
                         <div class="product__slide product__slide_image1"></div>
                         <div class="product__slide product__slide_image2"></div>
@@ -32,12 +33,11 @@
                     </div>
 
                     <div class="product__slider_navigation">
-                        <label for="radio1" class="product__slide_color product__slide_color_1"></label>
-                        <label for="radio2" class="product__slide_color product__slide_color_2"></label>
-                        <label for="radio3" class="product__slide_color product__slide_color_3"></label>
-                        <label for="radio4" class="product__slide_color product__slide_color_4"></label>
+                        <label class="product__slide_color product__slide_color_1" for="radio1"></label>
+                        <label class="product__slide_color product__slide_color_2" for="radio2"></label>
+                        <label class="product__slide_color product__slide_color_3" for="radio3"></label>
+                        <label class="product__slide_color product__slide_color_4" for="radio4"></label>
                     </div>
-
                 </div>
 
             </div>
@@ -45,26 +45,42 @@
             <div class="additional-info">
                 <p class="additional-info__title">Nike SB Stefan Janoski Max</p>
                 <p class="additional-info__description">Unisex Skateboarding Shoe</p>
-                <div class="additional-info__evaluation"></div>
-                <select name="size" id="size" class="additional-info__size">
-                    <option hidden disabled selected value="size">Size</option>
-                    <option value="UK-7">UK 7 EU 41</option>
-                    <option value="UK-8">UK 8 EU 42</option>
-                    <option value="UK-8.5">UK 8,5 EU 43</option>
-                    <option value="UK-9">UK 9 EU 44</option>
-                    <option value="UK-9,5">UK 9 EU 44,5</option>
-                    <option value="UK-10">UK 10 EU 45</option>
-                </select>
 
-                <select name="qty" id="qty" class="additional-info__qty">
-                    <option hidden disabled selected value="qty">Qty</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                </select>
+                <div class="additional-info__rating">
+                    <input class="additional-info__rating_input" id="star5" type="radio" name="star" value="5" />
+                    <label class="additional-info__rating_label fa fa-star fa-xs" for="star5"></label>
+                    <input class="additional-info__rating_input" id="star4" type="radio" name="star" value="4" />
+                    <label class="additional-info__rating_label fa fa-star fa-xs" for="star4"></label>
+                    <input class="additional-info__rating_input" id="star3" type="radio" name="star" value="3" />
+                    <label class="additional-info__rating_label fa fa-star fa-xs" for="star3"></label>
+                    <input class="additional-info__rating_input" id="star2" type="radio" name="star" value="2" />
+                    <label class="additional-info__rating_label fa fa-star fa-xs" for="star2"></label>
+                    <input class="additional-info__rating_input" id="star1" type="radio" name="star" value="1" />
+                    <label class="additional-info__rating_label fa fa-star fa-xs" for="star1"></label>
+                </div>
+
+                <div>
+                    <select class="additional-info__size" id="size" name="size">
+                        <option hidden disabled selected value="size">Size</option>
+                        <option value="UK-7">UK 7 EU 41</option>
+                        <option value="UK-8">UK 8 EU 42</option>
+                        <option value="UK-8.5">UK 8,5 EU 43</option>
+                        <option value="UK-9">UK 9 EU 44</option>
+                        <option value="UK-9,5">UK 9 EU 44,5</option>
+                        <option value="UK-10">UK 10 EU 45</option>
+                    </select>
+
+                    <select class="additional-info__qty" id="qty" name="qty">
+                        <option hidden disabled selected value="qty">Qty</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
 
                 <button class="additional-info__button">Add to cart</button>
             </div>
+
         </div>
 
     </div>

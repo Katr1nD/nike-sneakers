@@ -2,7 +2,6 @@
 
 body {
     margin: 0;
-
 }
 
 .wrapper {
@@ -10,6 +9,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-image: url('../img/background.png');
     background-size: 100%;
 }
@@ -23,7 +23,6 @@ body {
     height: 391px;
     border-radius: 10px;
     display: flex;
-    /* align-items: stretch; */
 }
 
 .product__image_logo {
@@ -35,7 +34,7 @@ body {
 .product__images {
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 70%;
 }
 
 .product__slide_image1 {
@@ -81,7 +80,6 @@ body {
     margin: 6px;
     opacity: .7;
     border-radius: 10px;
-    transition: all .4s ease;
     cursor: pointer;
 }
 
@@ -91,7 +89,7 @@ body {
     transform: scale(1.1);
 }
 
-input[name="radio"] {
+.product__slide_input {
     position: absolute;
     visibility: hidden;
 }
@@ -104,7 +102,6 @@ input[name="radio"] {
 
 .product__slide {
     width: 25%;
-    transition: all .6s ease;
 }
 
 .product__slide_image {
@@ -145,10 +142,17 @@ input[name="radio"] {
 }
 
 .additional-info {
+    margin: 50px 0;
     flex-grow: 1;
+    font-size: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
 .additional-info__title {
+    margin: 0;
     width: 15rem;
     font-size: 24px;
     line-height: 26px;
@@ -156,14 +160,14 @@ input[name="radio"] {
 }
 
 .additional-info__description {
+    margin: 0;
     font-size: 14px;
     opacity: 0.5;
 }
 
-
 .additional-info__size,
 .additional-info__qty {
-    width: 69px;
+    width: 80px;
     height: 32px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: #111a28;
@@ -171,12 +175,8 @@ input[name="radio"] {
     line-height: 18px;
     font-size: 14px;
     padding-left: 5px;
+    margin-right: 10px;
     cursor: pointer;
-    margin-bottom: 30px;
-}
-
-.additional-info__size {
-    /* margin-right: 46px; */
 }
 
 .additional-info__button {
@@ -184,8 +184,44 @@ input[name="radio"] {
     height: 40px;
     font-weight: 200;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    background-color: #4c525a;
+    background-color: rgba(76, 82, 90, 0.5);
     color: rgba(225, 225, 225, 0.5);
     outline: none;
     cursor: pointer;
+}
+
+/* rating */
+
+.additional-info__rating {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    float: left;
+}
+
+.additional-info__rating::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.additional-info__rating_label {
+    float: right;
+    padding-left: 2px;
+    cursor: pointer;
+}
+
+.additional-info__rating_label:last-child {
+    padding-left: 0;
+}
+
+.additional-info__rating_input {
+    display: none;
+}
+
+.additional-info__rating_label:hover::before,
+.additional-info__rating_label:hover~.additional-info__rating_label::before,
+.additional-info__rating_input:checked~.additional-info__rating_label::before {
+    content: '\f005';
+    color: #ffb300;
 }
