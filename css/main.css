@@ -189,6 +189,29 @@ body {
     cursor: pointer;
 }
 
+.additional-info__button:hover {
+    animation: scale 0.8s ease-in;
+}
+
+@keyframes scale {
+
+    50% {
+        transform: scale(1.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    100% {
+        transform: scale(1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+}
+
+.additional-info__button:active {
+    background-color: rgba(18, 155, 135, 0.5);
+    color: rgba(225, 225, 225, 0.8);
+}
+
 /* rating */
 
 .additional-info__rating {
